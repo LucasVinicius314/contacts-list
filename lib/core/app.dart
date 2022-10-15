@@ -10,11 +10,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       color: Colors.teal,
       title: 'Contacts list',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(
         colorScheme: const ColorScheme.light().copyWith(primary: Colors.teal),
       ),
       routes: {
-        '/': (context) => Contacts(),
+        '/': (context) => const Contacts(),
         '/chat': (context) => const Chat(),
       },
     );

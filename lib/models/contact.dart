@@ -1,3 +1,5 @@
+import 'package:contacts_list/utils/formatting.dart';
+
 class Contact {
   const Contact({
     required this.name,
@@ -11,5 +13,5 @@ class Contact {
   final String phoneNumber;
   final List<String> messages;
 
-  // TODO: fix, helper
+  String get formattedPhoneNumber => Formatting.phoneNumber(phoneNumber);
 }
